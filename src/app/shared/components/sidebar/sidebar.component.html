@@ -4,10 +4,10 @@
 
   <hr class="text-white">
 
-  <div *ngFor="let tag of tagsHistory" class='history-container'>
+  <div *ngFor="let tag of tags" class='history-container'>
 
     <button class="list-group-item list-group-item-action btn-tags">
-      {{tag}}
+      {{ tag | titlecase }}
     </button>
 
   </div>

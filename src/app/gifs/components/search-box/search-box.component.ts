@@ -21,12 +21,9 @@ export class SearchBoxComponent{
 
   constructor(private gifsService: GifsService) { }
 
-  print(){
-    console.log(this.gifsService.tagsHistory)
-  }
-
-  searchTag( ){
+  searchTag( ): void{
   // searchTag( newTag: string){
+
     const newTag = this.tagInput.nativeElement.value;
 
     this.gifsService.searchTag(newTag)

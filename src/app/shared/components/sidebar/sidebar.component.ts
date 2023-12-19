@@ -10,10 +10,8 @@ export class SidebarComponent {
 
   constructor(private gifsService: GifsService){}
 
-  public tagsHistory: string[] = this.gifsService.tagsHistory
-
-  print(){
-    console.log(this.tagsHistory)
+  get tags() {
+    return this.gifsService.tagsHistory
   }
 
 }
